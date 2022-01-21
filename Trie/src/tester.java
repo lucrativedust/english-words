@@ -4,7 +4,7 @@ public class tester {
     public static void main(String[] args) {
         Vector<String> vs = new Vector<String>();
         try {
-            FileInputStream fstream = new FileInputStream("/Users/somadityasingh/Documents/GitHub/english-words/Pruning Radix Trie/alpha.txt");
+            FileInputStream fstream = new FileInputStream("/Users/dhruvtyagi/Documents/GitHub/english-words/Pruning Radix Trie/alpha.txt");
             Scanner s = new Scanner(fstream);
             while (s.hasNextLine()) vs.add(s.nextLine());
         } catch (FileNotFoundException e){
@@ -19,7 +19,7 @@ public class tester {
         HashMap<Integer, String> hm=prt.ArrayToMap(answer);
         prt rt = prt.FormTrie(hm);
         rt.setminrank(rt.Root);
-        String queryy = "carbon";
+        String queryy = "pseudo";
         int k = 10;
         for (int i = 0; i < queryy.length(); i++) {
             String query = queryy.substring(0, i+1);
