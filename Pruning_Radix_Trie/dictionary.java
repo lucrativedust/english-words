@@ -3798,6 +3798,7 @@ public class dictionary {
             FileInputStream fstream = new FileInputStream(st);
             Scanner s = new Scanner(fstream);
             while (s.hasNextLine()) vs.add(s.nextLine());
+            s.close();
         } catch (FileNotFoundException e){
             System.out.println("File not found");
         }

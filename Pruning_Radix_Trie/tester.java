@@ -10,6 +10,7 @@ public class tester {
             FileInputStream fstream = new FileInputStream("/Users/dhruvtyagi/Documents/GitHub/english-words/Pruning_Radix_Trie/alpha.txt");
             Scanner s = new Scanner(fstream);
             while (s.hasNextLine()) vs.add(s.nextLine());
+            s.close();
         } catch (FileNotFoundException e){
             System.out.println("File not found");
         }
