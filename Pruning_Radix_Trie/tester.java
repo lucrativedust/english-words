@@ -7,7 +7,7 @@ public class tester {
         // String[] dict2 = dict.dictfromfile("alpha.txt");
         Vector<String> vs = new Vector<String>();
         try {
-            FileInputStream fstream = new FileInputStream("/Users/dhruvtyagi/Documents/GitHub/english-words/Pruning Radix Trie/alpha.txt");
+            FileInputStream fstream = new FileInputStream("/Users/dhruvtyagi/Documents/GitHub/english-words/Pruning_Radix_Trie/alpha.txt");
             Scanner s = new Scanner(fstream);
             while (s.hasNextLine()) vs.add(s.nextLine());
         } catch (FileNotFoundException e){
